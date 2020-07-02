@@ -3,8 +3,8 @@
 # IMPORT: Basic Script to import SSL certificate for DAP Master Server
 
 # Global Variables
-certDir="/home/user01/DAPLabs/certs"
-masterContainer="dap1"
+certDir="/home/ec2-user/certs"
+masterContainer="conjur-appliance"
 archive="certBundle.tar"
 
 # Change working directory
