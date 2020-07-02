@@ -4,12 +4,12 @@
 
 # Global Variables
 serverType="standby"
-standbyContainer="dap2"
-standbyDNS="dap2.cyber-ark-demo.local"
-standbyIP="10.0.0.101"
+standbyContainer="conjur-appliance2"
+standbyDNS="dap2.myorg.local"
+standbyIP="10.10.10.14"
 masterContainer="dap1"
-masterDNS="dap1.cyber-ark-demo.local"
-version="11.2.1"		## Change to installation version
+masterDNS="dap1.myorg.local"
+version="11.4.0"		## Change to installation version
 
 
 # Create Seed Archive File
