@@ -5,10 +5,10 @@
 # Global Variables
 masterContainer="conjur-appliance"
 serverType="master"
-masterDNS="dap1.cyber-ark-demo.local"
-clusterDNS="dap-master.cyber-ark-demo.local"
-standby1DNS="dap2.cyber-ark-demo.local"
-standby2DNS="dap3.cyber-ark-demo.local"
+masterDNS="dap1.myorg.local"
+clusterDNS="dapmaster.myorg.local"
+standby1DNS="dap2.myorg.local"
+standby2DNS="dap3.myorg.local"
 adminPass="MyCyber@rk01"
 accountName="myorg"
 
