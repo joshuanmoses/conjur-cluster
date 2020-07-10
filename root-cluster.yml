@@ -1,0 +1,55 @@
+---
+
+# Create DAP Security Admin Group
+- !group
+  id: dap_admin
+  owner: !user admin
+  annotations:
+    Department: DAP Security Admins
+
+# Assign Privileges to Resources
+- !permit
+  role: !group dap_admin
+  privileges: [ read, create, update ]
+  resources:
+    - !policy root
+
+#Cluster Environment Policy
+- !policy
+  id: conjur
+  body:
+    - !policy
+        id: cluster/dap-cluster
+        body:
+        - !layer
+        - &hosts
+          - !host
+            id: dap1.myorg.local
+          - !host
+            id: dap2.myorg.local
+          - !host
+            id: dap3.myorg.local
+        - !grant
+          role: !layer
+          member: *hosts
+
+# Define Environment Policy Settings (Dev, Test, Prod)
+- !policy
+  id: dev
+  owner: !group dap_admin
+  annotations:
+    Environment: Development
+
+- !policy
+  id: test
+  owner: !group dap_admin
+  annotations:
+    Environment: Test
+
+- !policy
+  id: prod
+  owner: !group dap_admin
+  annotations:
+    Environment: Production
+
+...
