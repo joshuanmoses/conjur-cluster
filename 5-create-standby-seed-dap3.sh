@@ -5,9 +5,9 @@
 # Global Variables
 serverType="standby"
 standbyContainer="dap3"
-standbyDNS="dap3.cyber-ark-demo.local"
+standbyDNS="dap3.myorg.local"
 masterContainer="dap1"
-masterDNS="dap1.cyber-ark-demo.local"
+masterDNS="dap1.myorg.local"
 dockerHost2Username="user01"
 dockerHost2IP="10.0.0.20"
 dockerHost2Dir="/home/user01/DAPLabs/dap-setup"
