@@ -5,7 +5,7 @@
 # Global Variables
 serverType="follower"
 followerContainer="dap-follower1"
-followerDNS="dap-follower1.cyber-ark-demo.local"
+followerDNS="dap-follower1.myorg.local"
 masterContainer="dap1"
 dockerHost2Username="user01"
 dockerHost2IP="10.0.0.20"
